@@ -27,4 +27,11 @@ public interface ManageService {
     BaseAttrInfo getBaseAttrInfo(String attrId);
     //根据三级分类ID获取商品信息列表
     List<SpuInfo> getSpuInfoList(SpuInfo spuInfo);
+
+    // 查询基本销售属性表
+    List<BaseSaleAttr> getBaseSaleAttrList();
+
+    //保存Spu信息
+    void saveSpuInfo(SpuInfo spuInfo);
+
 }

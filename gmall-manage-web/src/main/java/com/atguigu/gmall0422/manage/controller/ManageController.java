@@ -78,5 +78,18 @@ public class ManageController {
     }
     /**
      * http://localhost:8082/baseSaleAttrList
+     * 销售属性列表
      */
+    @RequestMapping("baseSaleAttrList")
+    public List<BaseSaleAttr>baseSaleAttrList(){
+        return manageService.getBaseSaleAttrList();
+    }
+
+    /** http://localhost:8082/saveSpuInfo
+     * 添加商品信息
+     */
+    @RequestMapping("saveSpuInfo")
+    public void saveSpuInfo(@RequestBody SpuInfo spuInfo){
+        manageService.saveSpuInfo(spuInfo);
+    }
 }
